@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+p {
+  border: 1px solid black;
+  padding: 20px;
+}
+p:nth-child(1){
+    grid-column: 1/span 2;
+}
